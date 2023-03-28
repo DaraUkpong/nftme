@@ -1,0 +1,23 @@
+.artist {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 440px) {
+  .artist > img {
+    width: 80%;
+  }
+  .artist > span {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}

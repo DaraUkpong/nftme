@@ -1,0 +1,58 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0rem 0 3rem 0;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.title > span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.artistsrow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Clash Display", sans-serif;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 2px;
+  border-style: none;
+}
+
+@media only screen and (max-width: 440px) {
+  .title > span {
+    font-size: 2rem;
+  }
+
+  .button {
+    margin-top: 0;
+    padding: 0.1rem 0.7rem 0.2rem 0.7rem;
+    font-size: 0.7rem;
+    width: 11rem;
+    height: 2.5rem;
+  }
+
+  .artistsrow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}

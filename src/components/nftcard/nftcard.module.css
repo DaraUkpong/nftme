@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 2rem 0rem 2rem 0rem;
+  background-color: transparent;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.cardtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardtitle > span {
+  font-size: 0.7rem;
+  color: #dd24e1;
+}
+
+.cardauthor {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardauthor > span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cardauthor > p {
+  font-size: 0.5rem;
+}
